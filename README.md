@@ -121,6 +121,18 @@ iam_role_arn = "ARN of the IAM role attached to the EC2 instance"
 workspace = "Current Terraform workspace in use"
 ```
 
+## Example `terraform.tfvars` file
+```sh
+project_name     = "my-terraform-project"
+aws_region       = "ap-south-1"
+environment      = "dev"
+s3_bucket_name   = "codingcops-test-bucket"
+instance_type    = "t2.micro"
+ami_id           = "ami-00ca570c1b6d79f36" # Amazon Linux
+key_name         = "my-ec2-key"
+allowed_ssh_cidr = ["0.0.0.0/0"]
+```
+
 ## Project Setup
 1. Clone the Repository
 ```sh
